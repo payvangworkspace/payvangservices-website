@@ -14,12 +14,12 @@ export default function Login() {
     return <Navigate to={homePath} replace />
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     setError('')
     setSubmitting(true)
 
-    const result = login(username, password)
+    const result = await login(username, password)
     setSubmitting(false)
 
     if (result.ok) {
