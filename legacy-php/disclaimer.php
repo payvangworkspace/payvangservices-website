@@ -1,0 +1,48 @@
+<?php require_once 'header-top.php'; ?>
+<?php require_once 'header-bottom.php'; ?>
+
+ 	
+		<div class="why-choose-us-area pt-150">
+			<div class="container">
+            <!-- row -->
+            <div class="row justify-content-center text-center">
+			<div class="col-12">
+			<div class="section-title">
+				<h2 class="title">Disclaimer</h2>
+				<div class="title-bdr">
+					<div class="left-bdr"></div>
+					<div class="right-bdr"></div>
+				</div>
+				
+			</div>
+			</div>
+			</div>
+			</div>
+		</div>
+        <!-- .end header -->
+        <!-- page-area-section -->
+        <section class="video-section pt-50 pb-40">
+            <div class="container">
+      
+				<p>V. Vang disclaims that V. Vang acts only as an agent on behalf of entities, it shall not have any liability whatsoever for any aspect of the standards of services provided by the entities. In no circumstances shall V. Vang be liable for the services provided by the entities. The services are provided on an “as is” and “as available” basis. V. Vang expressly disclaims all warranties of any kind, whether express or implied, including, but not limited to the implied warranties of merchant ability, fitness for a particular purpose and non-infringement. No advice or information, whether oral or written, which the User obtains from V. Vang or through the services shall create any warranty not expressly made herein or in the terms and conditions of the services. The sole and exclusive remedy of the User in case of disagreement, in whole or in part, of the user agreement, is to discontinue using the services after notifying V. Vang in writing.</p>
+
+
+            </div>
+        </section>
+        <!-- .end page-area-section -->
+        <!-- worker-support -->
+        <section class="retail-section-bg worker-section">
+            <div class="container">
+                
+            </div>
+        </section>
+        <!-- .end worker-section -->
+       
+       
+		
+		
+        
+
+<?php require_once 'footer-top.php'; ?>
+
+<?php require_once 'footer-bottom.php'; ?>

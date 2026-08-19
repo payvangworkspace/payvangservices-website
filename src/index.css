@@ -1,0 +1,647 @@
+/* React app overrides — keep theme CSS from /public/css */
+
+#preloader.preloader-done {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+
+.acavo-responsive-nav .mobile-menu-toggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  font-size: 28px;
+  line-height: 1;
+  color: #222;
+  z-index: 10;
+}
+
+.navbar-area.mobile-open .acavo-nav .navbar-collapse {
+  display: block !important;
+}
+
+@media (max-width: 991px) {
+  .acavo-nav .navbar-collapse {
+    display: none;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .acavo-nav .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .acavo-nav .nav-item {
+    width: 100%;
+  }
+
+  .acavo-nav .nav-link {
+    padding: 10px 0;
+  }
+}
+
+.go-top-area .go-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.page-html a {
+  cursor: pointer;
+}
+
+button.nav-link.nav-btn {
+  cursor: pointer;
+  font: inherit;
+}
+
+/* ==========================================================================
+   Navigation focus + active states
+   The theme's `outline: -webkit-focus-ring-color auto 0px` does not remove
+   Chrome's ring, because `outline-style: auto` ignores outline-width.
+   ========================================================================== */
+
+.navbar-area a,
+.navbar-area button,
+.page-html a,
+.page-html button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.navbar-area a:focus,
+.navbar-area button:focus,
+.page-html a:focus,
+.page-html button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Plain nav links: soft tinted pill on hover, focus and current page */
+.acavo-nav .navbar .navbar-nav .nav-item > a,
+.acavo-nav .navbar .navbar-nav .nav-item > button.nav-link {
+  border-radius: 10px;
+  transition: color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.acavo-nav .navbar .navbar-nav .nav-item:not(.nav-item-btn) > a:hover,
+.acavo-nav .navbar .navbar-nav .nav-item:not(.nav-item-btn) > a.active {
+  background-color: rgba(145, 185, 37, 0.09);
+}
+
+/* React Router sets .active on the anchor, the theme only styled li.active */
+.acavo-nav .navbar .navbar-nav .nav-item > a.active::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.acavo-nav .navbar .navbar-nav .nav-item > a:focus-visible,
+.acavo-nav .navbar .navbar-nav .nav-item > button.nav-link:focus-visible {
+  outline: none;
+  background-color: rgba(145, 185, 37, 0.12);
+  box-shadow: 0 0 0 3px rgba(145, 185, 37, 0.35);
+}
+
+/* Pill buttons keep their rounded shape when focused */
+.acavo-nav .navbar .navbar-nav .nav-item-btn .nav-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(145, 185, 37, 0.32);
+}
+
+.acavo-nav .navbar .navbar-nav .nav-item-btn .nav-btn-solid:focus-visible {
+  box-shadow: 0 8px 18px rgba(145, 185, 37, 0.28), 0 0 0 4px rgba(145, 185, 37, 0.32);
+}
+
+/* Logo and mobile menu toggle */
+.navbar-area .navbar-brand:focus-visible,
+.navbar-area .logo a:focus-visible {
+  outline: none;
+  border-radius: 8px;
+  box-shadow: 0 0 0 3px rgba(145, 185, 37, 0.35);
+}
+
+.acavo-responsive-nav .mobile-menu-toggle:focus-visible {
+  outline: none;
+  border-radius: 8px;
+  box-shadow: 0 0 0 3px rgba(145, 185, 37, 0.35);
+}
+
+@media (max-width: 991px) {
+  .acavo-nav .navbar .navbar-nav .nav-item > a,
+  .acavo-nav .navbar .navbar-nav .nav-item > button.nav-link {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Login helpers */
+.login-form .form-control:focus-visible,
+.login-form .form-check-input:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(145, 185, 37, 0.3);
+  border-radius: 6px;
+}
+
+.login-form .form-check-input:checked {
+  background-color: #91b925;
+  border-color: #91b925;
+}
+
+.login-form .btn.theme-btn-1:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(145, 185, 37, 0.35);
+}
+
+.login-demo-hint {
+  margin: 0.35rem 0 0.5rem;
+  font-size: 0.9rem;
+  color: #7f839c;
+}
+
+.login-demo-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.login-demo-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid #e6e9f2;
+  border-radius: 0.5rem;
+  background: #fff;
+  color: #1e2230;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.login-demo-btn:hover {
+  border-color: #91b925;
+  background: #f6faea;
+}
+
+.login-demo-btn small {
+  color: #7f839c;
+  font-weight: 400;
+  font-size: 0.76rem;
+}
+
+.login-demo-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(145, 185, 37, 0.35);
+}
+
+.login-error {
+  margin-bottom: 1rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.4rem;
+  background: #fff1f1;
+  color: #c0392b;
+  font-size: 0.92rem;
+}
+
+/* ==========================================================================
+   Portal shell — shared by the admin and customer dashboards
+   ========================================================================== */
+
+.portal {
+  --portal-ink: #1e2230;
+  --portal-muted: #7f839c;
+  --portal-line: #e6e9f2;
+  --portal-bg: #f4f6fb;
+  --portal-green: #91b925;
+  --portal-green-2: #b3eb1b;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  background: var(--portal-bg);
+  color: var(--portal-ink);
+}
+
+.portal-sidebar {
+  background: #151925;
+  color: #fff;
+  padding: 1.5rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.portal-brand img {
+  max-width: 140px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.portal-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+}
+
+.portal-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 0.5rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.portal-nav-item:hover,
+.portal-nav-item.active {
+  background: rgba(145, 185, 37, 0.18);
+  color: #fff;
+}
+
+.portal-logout {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: transparent;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.7rem 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  cursor: pointer;
+}
+
+.portal-logout:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.portal-main {
+  padding: 1.5rem 1.75rem 2rem;
+}
+
+.portal-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.portal-eyebrow {
+  margin: 0;
+  color: var(--portal-muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.portal-topbar h1 {
+  margin: 0.2rem 0 0;
+  font-size: 1.7rem;
+}
+
+.portal-user-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: #fff;
+  border: 1px solid var(--portal-line);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem 0.4rem 0.4rem;
+}
+
+.portal-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 700;
+  background-image: linear-gradient(to right, var(--portal-green), var(--portal-green-2));
+}
+
+.portal-user-chip strong,
+.portal-user-chip small {
+  display: block;
+  line-height: 1.2;
+}
+
+.portal-user-chip small {
+  color: var(--portal-muted);
+}
+
+.portal-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.portal-stat-card {
+  background: #fff;
+  border: 1px solid var(--portal-line);
+  border-radius: 0.85rem;
+  padding: 1rem;
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+}
+
+.portal-stat-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 0.65rem;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 1.25rem;
+  background-image: linear-gradient(to right, var(--portal-green), var(--portal-green-2));
+}
+
+.portal-stat-card p {
+  margin: 0;
+  color: var(--portal-muted);
+  font-size: 0.88rem;
+}
+
+.portal-stat-card h2 {
+  margin: 0.2rem 0;
+  font-size: 1.4rem;
+}
+
+.portal-stat-card span {
+  color: #5f7d1f;
+  font-size: 0.82rem;
+}
+
+.portal-panel {
+  background: #fff;
+  border: 1px solid var(--portal-line);
+  border-radius: 0.85rem;
+  padding: 1.1rem 1.15rem 1.25rem;
+  margin-bottom: 1.1rem;
+}
+
+.portal-panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.portal-panel-head h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.portal-panel-head span {
+  color: var(--portal-muted);
+  font-size: 0.85rem;
+}
+
+.portal-table-wrap {
+  overflow-x: auto;
+}
+
+.portal-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+}
+
+.portal-table th,
+.portal-table td {
+  text-align: left;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid var(--portal-line);
+  font-size: 0.92rem;
+}
+
+.portal-table th {
+  color: var(--portal-muted);
+  font-weight: 600;
+}
+
+.portal-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.status-success {
+  background: #eef8d8;
+  color: #5f7d1f;
+}
+
+.status-pending {
+  background: #fff7df;
+  color: #9a7b12;
+}
+
+.status-failed {
+  background: #ffe8e8;
+  color: #c0392b;
+}
+
+.portal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.portal-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: #fff;
+  background-image: linear-gradient(to right, var(--portal-green), var(--portal-green-2));
+  font-weight: 600;
+}
+
+.portal-action-btn.compact {
+  padding: 0.5rem 0.9rem;
+  font-size: 0.88rem;
+}
+
+.portal-action-btn.outline {
+  background-image: none;
+  background: transparent;
+  color: var(--portal-ink);
+  border: 1px solid var(--portal-line);
+}
+
+.portal a:focus,
+.portal button:focus {
+  outline: none;
+}
+
+.portal a:focus-visible,
+.portal button:focus-visible {
+  outline: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 3px rgba(145, 185, 37, 0.45);
+}
+
+/* Customer portal — upcoming bills and quick pay */
+
+.bill-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.bill-item {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid var(--portal-line);
+  border-radius: 0.7rem;
+}
+
+.bill-icon {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border-radius: 0.6rem;
+  display: grid;
+  place-items: center;
+  font-size: 1.15rem;
+  color: #5f7d1f;
+  background: #f1f8de;
+}
+
+.bill-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.bill-info strong,
+.bill-meta strong {
+  display: block;
+  line-height: 1.3;
+}
+
+.bill-info small,
+.bill-meta small {
+  color: var(--portal-muted);
+  font-size: 0.82rem;
+}
+
+.bill-meta {
+  text-align: right;
+}
+
+.bill-meta small.is-urgent {
+  color: #c0392b;
+  font-weight: 600;
+}
+
+.quick-pay-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.quick-pay-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.1rem 0.75rem;
+  border: 1px solid var(--portal-line);
+  border-radius: 0.75rem;
+  text-decoration: none;
+  color: var(--portal-ink);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.quick-pay-card i {
+  font-size: 1.5rem;
+  color: #5f7d1f;
+}
+
+.quick-pay-card:hover {
+  border-color: var(--portal-green);
+  background: #f6faea;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1100px) {
+  .portal-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .quick-pay-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .portal {
+    grid-template-columns: 1fr;
+  }
+
+  .portal-sidebar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+
+  .portal-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .portal-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .portal-main {
+    padding: 1rem;
+  }
+
+  .portal-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .bill-item {
+    flex-wrap: wrap;
+  }
+
+  .bill-meta {
+    text-align: left;
+  }
+
+  .login-demo-buttons {
+    grid-template-columns: 1fr;
+  }
+}
+

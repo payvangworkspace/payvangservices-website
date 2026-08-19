@@ -1,0 +1,12 @@
+[08-Sep-2023 12:37:29 UTC] PHP Warning:  Undefined array key "APP_ID" in /home/payvangser/public_html/payment/index.php on line 12
+[08-Sep-2023 12:37:29 UTC] PHP Warning:  Undefined array key "SALT" in /home/payvangser/public_html/payment/index.php on line 14
+[08-Sep-2023 12:37:29 UTC] PHP Warning:  Undefined array key "RETURN_URL" in /home/payvangser/public_html/payment/index.php on line 15
+[08-Sep-2023 12:37:29 UTC] PHP Warning:  Undefined array key "ORDER_ID" in /home/payvangser/public_html/payment/index.php on line 18
+[08-Sep-2023 12:39:21 UTC] PHP Warning:  Undefined array key "APP_ID" in /home/payvangser/public_html/payment/index.php on line 12
+[08-Sep-2023 12:39:21 UTC] PHP Warning:  Undefined array key "SALT" in /home/payvangser/public_html/payment/index.php on line 14
+[08-Sep-2023 12:39:21 UTC] PHP Warning:  Undefined array key "RETURN_URL" in /home/payvangser/public_html/payment/index.php on line 15
+[08-Sep-2023 12:39:21 UTC] PHP Warning:  Undefined array key "ORDER_ID" in /home/payvangser/public_html/payment/index.php on line 18
+[08-Sep-2023 12:40:21 UTC] PHP Warning:  Undefined array key "APP_ID" in /home/payvangser/public_html/payment/index.php on line 12
+[08-Sep-2023 12:40:21 UTC] PHP Warning:  Undefined array key "SALT" in /home/payvangser/public_html/payment/index.php on line 14
+[08-Sep-2023 12:40:21 UTC] PHP Warning:  Undefined array key "RETURN_URL" in /home/payvangser/public_html/payment/index.php on line 15
+[08-Sep-2023 12:40:21 UTC] PHP Warning:  Undefined array key "ORDER_ID" in /home/payvangser/public_html/payment/index.php on line 18
