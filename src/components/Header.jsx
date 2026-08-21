@@ -50,23 +50,23 @@ export default function Header() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/sale-services" className="nav-link" onClick={close}>
-                    Sale Services
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink to="/travel" className="nav-link" onClick={close}>
-                    Travel
+                  <NavLink to="/communities" className="nav-link" onClick={close}>
+                    Communities
                   </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink to="/education" className="nav-link" onClick={close}>
-                    School
+                    Education
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/manpower" className="nav-link" onClick={close}>
-                    Manpower
+                  <NavLink to="/utility" className="nav-link" onClick={close}>
+                    Essential Services
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/b2b" className="nav-link" onClick={close}>
+                    B2B
                   </NavLink>
                 </li>
                 <li className="nav-item">

@@ -71,19 +71,16 @@ export default function Footer() {
                   <div className="footer-link">
                     <ul>
                       <li>
-                        <Link to="/sale-services">Sale Services</Link>
-                      </li>
-                      <li>
-                        <Link to="/travel">Travel</Link>
-                      </li>
-                      <li>
-                        <Link to="/education">School</Link>
-                      </li>
-                      <li>
-                        <Link to="/manpower">Manpower</Link>
-                      </li>
-                      <li>
                         <Link to="/communities">Communities</Link>
+                      </li>
+                      <li>
+                        <Link to="/education">Education</Link>
+                      </li>
+                      <li>
+                        <Link to="/utility">Essential Services</Link>
+                      </li>
+                      <li>
+                        <Link to="/b2b">B2B Profile</Link>
                       </li>
                       <li>
                         <Link to="/privacy-policy">Privacy Policy</Link>

@@ -5,9 +5,6 @@ import Home from './pages/Home'
 import Utility from './pages/Utility'
 import Education from './pages/Education'
 import Parking from './pages/Parking'
-import SaleServices from './pages/SaleServices'
-import Travel from './pages/Travel'
-import Manpower from './pages/Manpower'
 import Communities from './pages/Communities'
 import Healthcare from './pages/Healthcare'
 import Contact from './pages/Contact'
@@ -38,9 +35,6 @@ export default function App() {
         <Route path="/utility" element={<Utility />} />
         <Route path="/education" element={<Education />} />
         <Route path="/parking" element={<Parking />} />
-        <Route path="/sale-services" element={<SaleServices />} />
-        <Route path="/travel" element={<Travel />} />
-        <Route path="/manpower" element={<Manpower />} />
         <Route path="/communities" element={<Communities />} />
         <Route path="/healthcare" element={<Healthcare />} />
         <Route path="/contact" element={<Contact />} />
