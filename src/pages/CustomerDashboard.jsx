@@ -31,10 +31,10 @@ const paymentHistory = [
 ]
 
 const quickPayServices = [
-  { to: '/utility', label: 'Utility Bills', icon: 'ri-lightbulb-flash-line' },
-  { to: '/education', label: 'School Fee', icon: 'ri-graduation-cap-line' },
-  { to: '/parking', label: 'Parking', icon: 'ri-parking-box-line' },
-  { to: '/healthcare', label: 'Healthcare', icon: 'ri-heart-pulse-line' },
+  { to: '/sale-services', label: 'Sale Services', icon: 'ri-shopping-bag-3-line' },
+  { to: '/travel', label: 'Travel', icon: 'ri-plane-line' },
+  { to: '/education', label: 'School', icon: 'ri-graduation-cap-line' },
+  { to: '/manpower', label: 'Manpower', icon: 'ri-team-line' },
 ]
 
 export default function CustomerDashboard() {

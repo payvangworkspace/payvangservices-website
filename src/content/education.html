@@ -1,164 +1,230 @@
 <style>
 .alphabetlinks {
-  display:inline-block;
-  color: #C69D5F !important;
-  font-size: 34px !important;
- 
-  font-weight: 398;
-  border-radius: 4px;
-  border: solid 1px #ccc;
-  padding: 7px;
-  margin-bottom: 20px;
-  margin-right: 5px;
-  width: 45px;
-  text-align: center;
-  background-color: #efefef;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  margin: 0 6px 10px 0;
+  border: 1px solid #e7ebf3;
+  border-radius: 10px;
+  background: #fff;
+  color: #5f7d1f !important;
+  font-size: 18px !important;
+  font-weight: 600;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.alphabetlinks:hover {
+  background: #f6faea;
+  border-color: rgba(145, 185, 37, 0.55);
+  transform: translateY(-2px);
+}
+
+.alphabet-picker {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 18px;
 }
 </style>
-<!-- home-secvice-section -->
-        <div class="why-choose-us-area pt-150">
-			<div class="container">
-            <!-- row -->
-            <div class="row justify-content-center text-center">
-			<div class="col-12">
-			<div class="section-title">
-				<h2 class="title">04 | Education</h2>
-				<div class="title-bdr">
-					<div class="left-bdr"></div>
-					<div class="right-bdr"></div>
-				</div>
-				<p>School fees without aggregation</p>
-			</div>
-			</div>
-			</div>
-			</div>
-		</div>
 
-		<section class="pt-50 pb-20">
-            <div class="container">
-				<p>The school remains the biller and merchant of record; PayVang supplies the workflow, experience and reconciliation layer.</p>
-				<h5>Supported workflows</h5>
-				<div class="table-responsive">
-					<table class="b2b-table">
-						<thead>
-							<tr><th>Workflow</th><th>What the institution controls</th><th>What PayVang provides</th></tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Fee configuration</td>
-								<td>Fee heads, amounts, due dates, concessions, late-fee rules and student mapping.</td>
-								<td>Configuration interface, import tools, validations and maker-checker workflow.</td>
-							</tr>
-							<tr>
-								<td>Parent communication</td>
-								<td>Approved messages, contact policy and escalation route.</td>
-								<td>Invoices, reminders, payment links, receipt notices and help-desk tracking.</td>
-							</tr>
-							<tr>
-								<td>Payment acceptance</td>
-								<td>School merchant/biller onboarding and settlement bank account.</td>
-								<td>Technical integration to the school's authorised bank/PA/BOU arrangement.</td>
-							</tr>
-							<tr>
-								<td>Reconciliation</td>
-								<td>Books of account, fee ledger and exception approval.</td>
-								<td>Transaction matching, reference mapping, exception queue and downloadable MIS.</td>
-							</tr>
-							<tr>
-								<td>Refunds/disputes</td>
-								<td>Refund decision and academic/financial policy.</td>
-								<td>Workflow capture, partner routing, status tracking and parent communication.</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<h5>Eligible fee and service categories</h5>
-				<ul class="b2b-list">
-					<li>Tuition, admission, examination, transport, hostel, library, laboratory and other institution-approved fee heads.</li>
-					<li>Books, uniforms, ID cards, events, activities or other goods/services only where the responsible seller is clearly disclosed.</li>
-					<li>Recurring and one-time notices with student ID, fee period, due date and institution-generated reference.</li>
-				</ul>
-				<h5>Settlement and accounting</h5>
-				<p>The parent pays against a school-issued obligation. The authorised payment partner/acquiring arrangement settles the principal amount directly to the school's designated bank account. PayVang receives its software, implementation or managed-service fee under a separate B2B invoice. PayVang does not net its fee from student funds unless the authorised partner and applicable rules expressly support that construct.</p>
-				<div class="b2b-note">
-					<p><strong>CONTROL OUTCOME</strong> The institution retains ownership of the fee receivable, refund decision, student ledger and bank settlement. PayVang retains responsibility for the accuracy, security and availability of its technology and support services.</p>
-				</div>
+<!-- Page hero -->
+<section class="svc-hero">
+    <div class="container">
+        <div class="svc-hero-inner">
+            <span class="svc-kicker"><i class="ri-book-open-line"></i> Merchant service</span>
+            <h1>School</h1>
+            <p class="svc-lead">PayVang is the merchant for school, college and tuition services. Parents and students buy from us, and we handle the invoice, the receipt and the payment support.</p>
+            <div class="svc-hero-actions">
+                <a href="/paynow2" class="btn theme-btn-1">Pay a Fee <i class="ri-arrow-right-line ml-2"></i></a>
             </div>
-        </section>
-		
-		<section class="pt-70 pb-70">
-            <div class="container">
-                
-                    <div class="row">
-						<div class="col-md-6">
-							<h5>Choose your School, College, Tution Centre by Name Alphabet</h5>
-							<h4>
-								<a href="#A" class="alphabetlinks">A</a>
-								<a href="#B" class="alphabetlinks">B</a>
-								<a href="#C" class="alphabetlinks">C</a>
-								<a href="#D" class="alphabetlinks">D</a>
-								<a href="#E" class="alphabetlinks">E</a>
-								<a href="#F" class="alphabetlinks">F</a>
-								<a href="#G" class="alphabetlinks">G</a>
-								<a href="#H" class="alphabetlinks">H</a>
-								<a href="#I" class="alphabetlinks">I</a>
-								<a href="#J" class="alphabetlinks">J</a>
-								<a href="#K" class="alphabetlinks">K</a>
-								<a href="#L" class="alphabetlinks">L</a>
-								<a href="#M" class="alphabetlinks">M</a>
-								<a href="#N" class="alphabetlinks">N</a>
-								<a href="#O" class="alphabetlinks">O</a>
-								<a href="#P" class="alphabetlinks">P</a>
-								<a href="#Q" class="alphabetlinks">Q</a>
-								<a href="#R" class="alphabetlinks">R</a>
-								<a href="#S" class="alphabetlinks">S</a>
-								<a href="#T" class="alphabetlinks">T</a>
-								<a href="#U" class="alphabetlinks">U</a>
-								<a href="#V" class="alphabetlinks">V</a>
-								<a href="#W" class="alphabetlinks">W</a>
-								<a href="#X" class="alphabetlinks">X</a>
-								<a href="#Y" class="alphabetlinks">Y</a>
-								<a href="#Z" class="alphabetlinks">Z</a>
-							</h4>
-                        </div>
-                        
-                        
-                        <div class="col-md-6">
-							<div class="form-inner">
-                        <h3>Pay Your Fee</h3>
-                        <form method="post" action="#" id="contact-form" class="default-form">
-                            <div class="row clearfix">
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group ">
-                                    <select name="consult" id="consultancy">
-									  <option value="">Select</option>
-									  <option value="Online Consultancy" selected>Aakash Institute</option>
-									  <option value="Offline Consultancy">Aurbindo College</option>
-									  <option value="Offline Consultancy">Arun Tution Centre</option>
-									  
-									</select>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                    <input type="text" name="aid" placeholder="Admission ID *">
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                    <input type="text" name="phone" placeholder="Your Phone *">
-                                </div>
-                                <!--<div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                    <input type="text" name="amount" placeholder="Amount *" required="">
-                                </div>-->
-                                
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
-                                    <!--<button class="btn theme-btn-1" type="submit" name="submit-form">Proceed</button>
-									<button onclick="window.location.href='/paynow2';" class="btn theme-btn-1" type="submit" name="submit-form">Proceed</button>-->
-									<a href="/paynow2" class="btn theme-btn-1">Proceed</a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                        </div>
-                        
-                    </div>
-                
+        </div>
+    </div>
+</section>
+<!-- /Page hero -->
+
+<!-- Overview -->
+<section class="svc-section">
+    <div class="container">
+        <div class="svc-section-head">
+            <span class="svc-eyebrow">Overview</span>
+            <h2>Clear billing for every fee head</h2>
+            <p>School is a PayVang merchant line covering school, college and tuition services. We bill the fee heads, issue invoices and receipts, take payment in our name and support the payment journey. Academic records, attendance and classroom delivery stay with the institution.</p>
+        </div>
+        <div class="svc-grid cols-3">
+            <div class="svc-card">
+                <span class="svc-card-icon"><i class="ri-book-open-line"></i></span>
+                <h3>Academic fees</h3>
+                <p>Tuition, admission, examination and term fees billed by PayVang with a clear due date and reference.</p>
             </div>
-        </section>
-        <!-- .end home-service-section -->
+            <div class="svc-card">
+                <span class="svc-card-icon"><i class="ri-bus-line"></i></span>
+                <h3>Campus services</h3>
+                <p>Transport, hostel, library, laboratory and activity heads collected under the same invoice trail.</p>
+            </div>
+            <div class="svc-card">
+                <span class="svc-card-icon"><i class="ri-customer-service-2-line"></i></span>
+                <h3>Parent support</h3>
+                <p>Reminders, payment links, receipts and a help desk that tracks each fee query to closure.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Overview -->
+
+<!-- What is included -->
+<section class="svc-section tinted">
+    <div class="container">
+        <div class="svc-section-head">
+            <span class="svc-eyebrow">What is included</span>
+            <h2>Fee and service categories we bill</h2>
+        </div>
+        <ul class="svc-checklist">
+            <li>Tuition, admission, examination and term fees billed by PayVang.</li>
+            <li>Transport, hostel, library, laboratory and activity heads where offered.</li>
+            <li>Books, uniforms, ID cards and event packages where PayVang is the disclosed seller.</li>
+            <li>Recurring and one-time notices with student ID, fee period and due date.</li>
+            <li>Parent invoices, reminders, payment links, receipts and help-desk tracking.</li>
+            <li>Refund and dispute workflow against the invoice, subject to academic policy.</li>
+        </ul>
+    </div>
+</section>
+<!-- /What is included -->
+
+<!-- How a payment works -->
+<section class="svc-section">
+    <div class="container">
+        <div class="svc-section-head">
+            <span class="svc-eyebrow">How a school payment works</span>
+            <h2>From fee schedule to receipt</h2>
+        </div>
+        <ol class="svc-steps">
+            <li>The institution shares fee heads, amounts, due dates and student mapping.</li>
+            <li>PayVang issues the parent invoice in its own name for the service sold.</li>
+            <li>The parent pays PayVang through the authorised acquiring arrangement.</li>
+            <li>PayVang issues the receipt and updates the fee status shared with the institution.</li>
+            <li>Exceptions, concessions and refunds follow academic policy and our merchant terms.</li>
+        </ol>
+    </div>
+</section>
+<!-- /How a payment works -->
+
+<!-- Workflows -->
+<section class="svc-section tinted">
+    <div class="container">
+        <div class="svc-section-head">
+            <span class="svc-eyebrow">Supported workflows</span>
+            <h2>What the institution controls and what we provide</h2>
+        </div>
+        <div class="svc-panel">
+            <table class="b2b-table">
+                <thead>
+                    <tr><th>Workflow</th><th>What the institution controls</th><th>What PayVang provides</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fee configuration</td>
+                        <td>Fee heads, amounts, due dates, concessions, late-fee rules and student mapping.</td>
+                        <td>Configuration interface, import tools, validations and maker-checker workflow.</td>
+                    </tr>
+                    <tr>
+                        <td>Parent communication</td>
+                        <td>Approved messages, contact policy and escalation route.</td>
+                        <td>Invoices, reminders, payment links, receipt notices and help-desk tracking.</td>
+                    </tr>
+                    <tr>
+                        <td>Payment acceptance</td>
+                        <td>Student mapping and academic policy for fee heads.</td>
+                        <td>PayVang merchant checkout, invoice, receipt and authorised payment-partner integration.</td>
+                    </tr>
+                    <tr>
+                        <td>Reconciliation</td>
+                        <td>Books of account, fee ledger and exception approval.</td>
+                        <td>Transaction matching, reference mapping, exception queue and downloadable MIS.</td>
+                    </tr>
+                    <tr>
+                        <td>Refunds/disputes</td>
+                        <td>Refund decision and academic/financial policy.</td>
+                        <td>Workflow capture, partner routing, status tracking and parent communication.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="svc-note">
+            <i class="ri-shield-check-line"></i>
+            <div>
+                <strong>Control outcome</strong>
+                <p>The parent pays PayVang as merchant for the school service purchased, and settlement follows PayVang's authorised acquiring arrangement. PayVang is responsible for price, delivery, support and refund of the school services it sells, while academic records remain with the institution.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Workflows -->
+
+<!-- Fee payment -->
+<section class="svc-section">
+    <div class="container">
+        <div class="svc-split">
+            <div>
+                <div class="svc-section-head">
+                    <span class="svc-eyebrow">Find your institution</span>
+                    <h2>Choose your school, college or tuition centre</h2>
+                    <p>Browse by the first letter of the institution name, or select it directly in the fee form.</p>
+                </div>
+                <div class="alphabet-picker">
+                    <a href="#A" class="alphabetlinks">A</a>
+                    <a href="#B" class="alphabetlinks">B</a>
+                    <a href="#C" class="alphabetlinks">C</a>
+                    <a href="#D" class="alphabetlinks">D</a>
+                    <a href="#E" class="alphabetlinks">E</a>
+                    <a href="#F" class="alphabetlinks">F</a>
+                    <a href="#G" class="alphabetlinks">G</a>
+                    <a href="#H" class="alphabetlinks">H</a>
+                    <a href="#I" class="alphabetlinks">I</a>
+                    <a href="#J" class="alphabetlinks">J</a>
+                    <a href="#K" class="alphabetlinks">K</a>
+                    <a href="#L" class="alphabetlinks">L</a>
+                    <a href="#M" class="alphabetlinks">M</a>
+                    <a href="#N" class="alphabetlinks">N</a>
+                    <a href="#O" class="alphabetlinks">O</a>
+                    <a href="#P" class="alphabetlinks">P</a>
+                    <a href="#Q" class="alphabetlinks">Q</a>
+                    <a href="#R" class="alphabetlinks">R</a>
+                    <a href="#S" class="alphabetlinks">S</a>
+                    <a href="#T" class="alphabetlinks">T</a>
+                    <a href="#U" class="alphabetlinks">U</a>
+                    <a href="#V" class="alphabetlinks">V</a>
+                    <a href="#W" class="alphabetlinks">W</a>
+                    <a href="#X" class="alphabetlinks">X</a>
+                    <a href="#Y" class="alphabetlinks">Y</a>
+                    <a href="#Z" class="alphabetlinks">Z</a>
+                </div>
+            </div>
+            <div class="form-inner">
+                <h3>Pay Your Fee</h3>
+                <form method="post" action="#" id="contact-form" class="default-form">
+                    <div class="row clearfix">
+                        <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                            <select name="consult" id="consultancy">
+                                <option value="">Select</option>
+                                <option value="Online Consultancy" selected>Aakash Institute</option>
+                                <option value="Offline Consultancy">Aurbindo College</option>
+                                <option value="Offline Consultancy">Arun Tution Centre</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                            <input type="text" name="aid" placeholder="Admission ID *">
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                            <input type="text" name="phone" placeholder="Your Phone *">
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
+                            <a href="/paynow2" class="btn theme-btn-1">Proceed</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Fee payment -->
